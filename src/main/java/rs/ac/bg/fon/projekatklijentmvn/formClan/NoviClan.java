@@ -145,7 +145,7 @@ public class NoviClan extends javax.swing.JDialog {
     private void btnSacuvajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSacuvajActionPerformed
         // TODO add your handling code here:
         if(txtIme.getText().isEmpty() || txtPrezime.getText().isEmpty() ||
-                txtBrojTelefona.getText().isEmpty() || txtAdresa.getText().isEmpty()){
+                txtBrojTelefona.getText().isEmpty() || txtAdresa.getText().isEmpty() || txtEmail.getText().isEmpty()){
             JOptionPane.showMessageDialog(this, "Sva polja su obavezna.");
             return;
         

@@ -302,7 +302,7 @@ public class ZaduzenjaClana extends javax.swing.JDialog {
 
         DefaultComboBoxModel<PrimerakKnjige> modelPrimerci = (DefaultComboBoxModel<PrimerakKnjige>) cbSifraPrimerka.getModel();
         PrimerakKnjige pk = (PrimerakKnjige) modelPrimerci.getSelectedItem();
-        pk.setStatus("Zadužena");
+        pk.setStatus("Zaduzena");
         zaduzenje.setPrimerak(pk);
 
         zaduzenje.setKorisnik(Sesija.getInstanca().getAdmin());
