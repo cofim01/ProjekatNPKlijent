@@ -156,7 +156,7 @@ public class DetaljiPrimerak extends javax.swing.JDialog {
 
     private void btnIzmeniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIzmeniActionPerformed
         // TODO add your handling code here:
-        if(txtStatus.getText().equals("Dostupna") || txtStatus.getText().equals("Izbačena")){
+        if(txtStatus.getText().equals("Dostupna") || txtStatus.getText().equals("Izbacena")){
             txtStatus.setEnabled(true);
             btnSacuvajIzmene.setVisible(true);
         }else{
@@ -169,7 +169,7 @@ public class DetaljiPrimerak extends javax.swing.JDialog {
 
     private void btnSacuvajIzmeneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSacuvajIzmeneActionPerformed
         // TODO add your handling code here:
-        if(txtStatus.getText().equals("Izbačena") || txtStatus.getText().equals("Dostupna")){
+        if(txtStatus.getText().equals("Izbacena") || txtStatus.getText().equals("Dostupna")){
             pk.setStatus(txtStatus.getText());
             try {
                 KlijentKontroler.getInstanca().izmeniPrimerak(pk);
@@ -183,7 +183,7 @@ public class DetaljiPrimerak extends javax.swing.JDialog {
                 JOptionPane.showMessageDialog(this, e.getMessage());
             }
         }else{
-            JOptionPane.showMessageDialog(this, "Moguće je postaviti status primerka knjige na vrednosti: Izbačena ili Dostupna" );
+            JOptionPane.showMessageDialog(this, "Moguće je postaviti status primerka knjige na vrednosti: Izbacena ili Dostupna" );
         }
     }//GEN-LAST:event_btnSacuvajIzmeneActionPerformed
 
